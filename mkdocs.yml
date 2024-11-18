@@ -1,0 +1,42 @@
+site_name: Asteri Docs
+
+theme:
+  name: material
+  palette:
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
+nav: 
+  - Home: index.md
+  - Balanceamento de carga: balanceamento_carga.md
+  - Caching: caching.md 
+  - Índices: indices.md 
+  - Polls de conexão: polls.md 
+  - Processamento assíncrono: processamento_assincrono.md
+
+markdown_extensions:
+  - pymdownx.emoji
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.keys
+  - pymdownx.snippets
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
